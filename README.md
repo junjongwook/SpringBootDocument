@@ -48,4 +48,10 @@ Spring Boot 관련한 문구들 모음
 3. 클래스 경로의 /config 패키지
 4. 클래스 경로의 루트
 
+### Profile
+- 설정 파일은 Profile 단위로 별도의 설정을 가진다.
+- 개발 환경, 운영 환경 등 환경별로 설정을 나누고 싶은 경우에는 application-{profile}.properties 의 명명 규칙으로 설정 파일을 만든다.
+- profile 별 설정은 application.properties 설정을 덮어 쓴다.
+- @ConfigruationProperties(prefix="foo") 형태로 이용할 수 있다.
+
 
