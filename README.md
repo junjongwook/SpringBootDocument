@@ -20,3 +20,15 @@ Spring Boot 관련한 문구들 모음
   스프링 JDBC, 톰캣 JDBC 커넥션풀(Tomcat JDBC Connection Pool)이 의존관계에 추가된다.
   
 * spring-boot 는 공식 아티팩트로 예약되어 있어서 신규 명칭 작성 시에 붙이지 않는다.
+
+### Maven 사용시
+- sping-boot-starter-parent 프로젝트를 부모 프로젝트로 상속한다.
+```xml
+<parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>2.0.6.RELEASE</version>
+</parent>
+```
+- 자바 컴파일러 준수 레벨은 디폴트값은 1.8이다.
+
